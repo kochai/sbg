@@ -1,0 +1,17 @@
+<div class="view-task--container" *ngIf="tasksModel.task && !errorLoadingTask">
+    <span>
+        {{ tasksModel.task.name }}
+    </span>
+    <span>
+        {{ tasksModel.task.project }}
+    </span>
+    <span>
+        {{ tasksModel.task.status }}
+    </span>
+    <button class="view-task--delete" (click)="deleteTask(tasksModel.task.id)">
+        Delete
+    </button>
+</div>
+<div class="view-task--container error" *ngIf="error">
+    {{ errorMessage }}
+</div>
