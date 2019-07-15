@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  authToken: 'ba2a2721d4e14571a6fb8325e415361d',
+  backendBaseUrl: 'https://cavatica-api.sbgenomics.com/v2'
 };
 
 /*
