@@ -1,0 +1,35 @@
+:host {
+    background: linear-gradient(45deg,#4158d0,#c850c0);
+    display: block;
+    min-height: 100%;
+    padding: 20px;
+
+    .app {
+
+        &-header {
+            background: #36304a;
+            width: 90%;
+            margin: 0 auto;
+            border-radius: 10px 10px 0 0;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &-title {
+            font-family: 'OpenSans', sans-serif;
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        &-creation {
+            padding: 10px 20px;
+            border: 0;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+
+    .list-item {
+        &__filters {
+            background: #36304a;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__header {
+            font-family: 'OpenSans', sans-serif;
+            font-size: 18px;
+            color: #fff;
+            line-height: 1.2;
+            padding: 20px 40px;
+        }
+
+        &__filterscontainer {
+            text-align: right;
+            padding-right: 40px;
+        }
+    }
+
+    .list--item__container {
+        width: 100%;
+
+        &.no-results {
+            display: flex;
+            background: #fff;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 20px;
+        }
+    }
+}

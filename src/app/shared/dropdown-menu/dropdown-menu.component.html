@@ -1,0 +1,3 @@
+<select [(ngModel)]="selected" (change)="onChange($event.target.value)">
+    <option *ngFor="let filter of filters" [value]="filter">{{filter}}</option>
+</select>

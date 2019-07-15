@@ -1,0 +1,20 @@
+<div class="list-item__filters">
+    <h1 class="list-item__header">
+        Filters
+    </h1>
+    <div class="list-item__filterscontainer">
+        <app-dropdown-menu [filters]="listTasksService.searchDefaults.limits"
+                            [selected]="listTasksService.params.limit"
+                            (changed)="updateLimitFilter($event)"></app-dropdown-menu>
+        <app-dropdown-menu [filters]="listTasksService.searchDefaults.statuses"
+                            [selected]="listTasksService.params.status"
+                            (changed)="updateStatusFilter($event)"></app-dropdown-menu>
+    </div>
+</div>
+<div class="list--item__container" *ngIf="tasksModel.tasks.length && !listTasksService.isLoading">
+    <app-list-task-item-header></app-list-task-item-header>
+    <app-list-task-item *ngFor="let task of tasksModel.tasks" [task]="task"></app-list-task-item>
+</div>
+<div class="list--item__container no-results" *ngIf="!tasksModel.tasks.length && !listTasksService.isLoading">
+    No results!
+</div>

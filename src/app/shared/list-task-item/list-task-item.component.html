@@ -1,0 +1,16 @@
+<div class="list-item"
+     *ngIf="task"
+     [routerLink]="['/view-task', task.id]">
+    <span>
+        {{ task.name }}
+    </span>
+    <span>
+        {{ task.href }}
+    </span>
+    <span>
+        {{ task.id }}
+    </span>
+    <span>
+        {{ task.project }}
+    </span>
+</div>
