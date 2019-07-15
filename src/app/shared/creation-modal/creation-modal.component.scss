@@ -1,0 +1,63 @@
+:host {
+    display: flex;
+    z-index: 999;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.4);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    .modal-content {
+        position: relative;
+        width: 100%;
+        max-width: 600px;
+        max-height: 800px;
+        padding: 20px;
+        margin: 12px;
+        background: #fff;
+    }
+
+    .close-modal {
+        font-size: 30px;
+        position: absolute;
+        top: 3px;
+        right: 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+
+        label,
+        input{
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+    }
+
+    .project-error {
+        color: #ff5959;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,20 @@
+<div class="modal-content">
+    <button class="close-modal" (click)="closeModal()">x</button>
+    <section class="project-creation">
+        <h1 class="project-title">
+            Create project
+        </h1>
+        <div class="form-container">
+            <label for="project-name">
+                Enter project name
+            </label>
+            <input type="text" name="project-name" [(ngModel)]="projectName">
+            <button class="submit-button" (click)="createProject()">
+                Submit
+            </button>
+        </div>
+        <span class="project-error" *ngIf="error">
+            {{ errorMessage }}
+        </span>
+    </section>
+</div>
